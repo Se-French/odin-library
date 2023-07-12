@@ -1,0 +1,142 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(152, 245, 164);
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    margin: 0 0 1.5em 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 .8em .8em rgb(1, 26, 36, .3);
+    background-image: url('images/pexels-polina-zimmerman.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#heading {
+    background-color: rgb(255, 255, 255, .3);
+    margin-top: 1em;
+}
+
+button {
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+    padding: .5em;
+}
+
+#new {
+    background-color: rgb(21, 101, 133);
+    color:rgb(255, 255, 255);
+    font-size: 1em;
+    margin: 1em 0 2.5em 0;
+    width: 10em;
+    box-shadow: 2px 3px 3px 2px rgb(5, 47, 63, .3);
+}
+
+#new:hover,
+#form button:hover,
+#form-button:hover {
+    background-color: rgb(12, 52, 68);
+    box-shadow: 2px 3px 3px 2px rgb(2, 9, 12);
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, .5);
+    margin-bottom: 1.5em;
+}
+
+#form div {
+    margin: .5em;
+}
+
+input {
+    border-radius: 8px;
+    border: 1px solid rgb(6, 1, 31);
+    padding: .3em;
+}
+
+input:focus {
+    box-shadow: 1px 3px 3px 1px rgb(6, 1, 31, .7);
+    outline: none;
+    border: 1px solid rgb(6, 1, 31);
+}
+
+#form-button {
+    margin: .5em;
+    border: none;
+    background-color: rgb(21, 101, 133);
+    color:rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 1px 2px 2px 1px rgb(5, 47, 63, .3);
+    padding: .5em;
+    width: 6em;
+    font-size: 1em;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+}
+
+.card {
+    border: 2px solid rgb(21, 101, 133);
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 1em 0;
+    margin: 1em;
+    white-space: pre-line;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.readBook {
+    background-color: rgb(67, 165, 67);
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 3px 3px 2px rgb(41, 94, 41, .4);
+    margin: 1em 0;
+    width: 10em;
+}
+
+.readBook:hover {
+    background-color: rgb(44, 109, 44);
+    box-shadow: 2px 3px 3px 2px rgb(22, 53, 22);
+}
+
+.notReadBook {
+    background-color: rgb(138, 55, 34);
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 3px 3px 2px rgb(71, 23, 11, .4);
+    margin: 1em 0;
+    width: 10em;
+}
+
+.notReadBook:hover{
+    background-color: rgb(99, 33, 17);
+    box-shadow: 2px 3px 3px 2px rgb(56, 19, 8);
+}
+.remove {
+    background-color: rgb(56, 56, 2);
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 3px 3px 2px rgb(56, 56, 2, .4);
+    width: 10em;
+}
+
+.remove:hover {
+    background-color: rgb(48, 48, 1);
+    box-shadow: 2px 3px 3px 2px rgb(31, 31, 1);
+}

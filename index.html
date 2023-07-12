@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="javascript.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        
+        <h1 id="heading">Library Catalogue</h1>
+
+        <button id="new">New Book</button>
+
+        <form id="form" action="" method="get" style="display: none">
+            <div class="title-input">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title">
+            </div>
+            <div class="author-input">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author">
+            </div>
+            <div class="pages-input">
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" name="pages">
+            </div>
+            <div class="genre-input">
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre">
+            </div>
+            <div class="read-input">
+                <label for="read">Have you read this book yet?</label>
+                    <input type="radio" id="yes" name="read">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="read" checked>
+                    <label for="no">No</label>
+            </div>
+            <input type="submit" value="Add" id="form-button">
+        </form>
+
+    </header>
+        
+    <div id="container"></div>
+
+</body>
+
+</html>

@@ -13,7 +13,6 @@ function addToLibrary(Book) {
     return myLibrary;
 }
 
-//A LIST OF MANUALLY ENTERED BOOKS
 const lightInAugust = new Book('Light In August', 'William Faulkner', 532, 'Classic', 'Read');
 const thePictureOfDorianGrey = new Book('The Picture Of Dorian Grey', 'Oscar Wilde', 203, 'Classic', 'Read');
 const onTheRoad = new Book('On The Road', 'Jack Kerouac', 346, 'Modern Classic', 'Read');
@@ -23,7 +22,6 @@ addToLibrary(thePictureOfDorianGrey);
 
 console.log(myLibrary);
 
-//THIS FUNCTION DISPLAYS EACH BOOK ON THE PAGE
 function printLibrary() {
     const container = document.getElementById('container');
     myLibrary.forEach(function(item){
@@ -82,7 +80,6 @@ function printLibrary() {
             console.log(myLibrary);
         });
 
-        //ADDS A REMOVE BUTTON TO EACH CARD
         const remove = document.createElement('button');
         remove.className = 'remove';
         remove.textContent = 'Remove';
@@ -102,8 +99,6 @@ function printLibrary() {
 
 printLibrary();
 
-
-//BELOW SHOWS A FORM WHEN THE NEW BOOK BUTTON IS CLICKED
 const form = document.getElementById('form');
 const newBook = document.getElementById('new');
 newBook.addEventListener('click', () => {
